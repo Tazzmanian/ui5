@@ -4,6 +4,8 @@ sap.ui.define([
 ], function (Button, MessageToast) {
 	"use strict";
 
+    alert('TEST')
+
 	new Button({
 		text: "Ready...",
 		press: function () {
