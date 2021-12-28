@@ -25,6 +25,7 @@
 						>
 							<content>
 								<mvc:XMLView viewName="sap.ui.demo.ui5.view.HelloPanel"/>
+                <mvc:XMLView viewName="sap.ui.demo.ui5.view.InvoiceList"/>
 							</content>
 						</Panel>
 					</content>
