@@ -13,12 +13,7 @@ sap.ui.define([
 
 	return UIComponent.extend("sap.ui.demo.ui5.Component", {
         metadata: {
-            rootView: {
-                "viewName": "sap.ui.demo.ui5.view.App",
-                "type": "XML",
-                "async": true,
-                "id": "app"
-            }
+            manifest: "json"
         },
         init: function() {
             // call init func of the parent
@@ -31,14 +26,6 @@ sap.ui.define([
             }
             const oModel = new JSONModel(oData);
             this.setModel(oModel);
-
-            // set i18n model
-            const i18nModel = new ResourceModel({
-                bundleName: "sap.ui.demo.ui5.i18n.i18n",
-                supportedLocales: [""],
-                fallbackLocale: ""
-            });
-            this.setModel(i18nModel, "i18n");
         }
     })
 });
