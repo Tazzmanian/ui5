@@ -2,12 +2,14 @@ sap.ui.define([
 	"sap/ui/base/ManagedObject",
     "sap/ui/core/UIComponent",
     "sap/ui/model/json/JSONModel",
-    "sap/ui/model/resource/ResourceModel"
+    "sap/ui/model/resource/ResourceModel",
+    "./controller/HelloDialog"
 ], function(
 	ManagedObject,
 	UIComponent,
 	JSONModel,
-	ResourceModel
+	ResourceModel,
+    HelloDialog
 ) {
 	"use strict";
 
@@ -26,6 +28,17 @@ sap.ui.define([
             }
             const oModel = new JSONModel(oData);
             this.setModel(oModel);
+
+            // set Dialog
+            this._helloDialog = new HelloDialog(this.getRootControl());
+        },
+        exit: function() {
+            this._helloDialog.destroy();
+            delete this._helloDialog;
+        },
+
+        openHelloDialog: function() {
+            this._helloDialog.open();
         }
     })
 });

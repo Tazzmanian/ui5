@@ -9,6 +9,13 @@
 			<pages>
 				<!--sap.ui.core.Control-->
 				<Page title="{i18n>homePageTitle}">
+          <headerContent>
+            <Button
+                icon="sap-icon://hello-world"
+                press=".onOpenDialog"
+            >
+            </Button>
+          </headerContent>
 					<content>
 						<!--sap.ui.core.Control-->
 						<Panel
