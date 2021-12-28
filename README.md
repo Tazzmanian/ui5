@@ -1,4 +1,4 @@
-Following the steps from https://www.youtube.com/watch?v=mmSB85rWQ3w&ab_channel=CodeWithBrandon
+Following the steps from https://www.youtube.com/watch?v=mmSB85rWQ3w&ab_channel=CodeWithBrandon and https://sapui5.hana.ondemand.com/#/topic/3da5f4be63264db99f2e5b04c5e853db
 
 
 # Installation 
