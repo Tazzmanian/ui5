@@ -4,7 +4,7 @@
 	xmlns="sap.m"
 >
 	<Button
-		text="Say Hi"
+		text="{i18n>showHelloButtonText}"
 		press=".onShowHello"
 	/>
      <Input
