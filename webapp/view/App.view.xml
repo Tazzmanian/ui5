@@ -1,34 +1,43 @@
 <mvc:View
-  controllerName="sap.ui.demo.ui5.controller.App"
-  xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m"
-  displayBlock="true"
+	controllerName="sap.ui.demo.ui5.controller.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	displayBlock="true"
 >
-  <Shell>
-    <App>
-      <pages>
-        <!--sap.ui.core.Control-->
-        <Page title="{i18n>homePageTitle}">
-          <content>
-            <!--sap.ui.core.Control-->
-            <Panel headerText="{i18n>HelloPanelTitle}">
-              <content>
-                <!--sap.ui.core.Control-->
-                <Button
-                  text="{i18n>showHelloButtonText}"
-                  press=".onShowHello"
-                />
-                <Input
-                  value="{/recipient/name}"
-                  description="Hello {/recipient/name}"
-                  valueLiveUpdate="true"
-                  width="60%"
-                />
-              </content>
-            </Panel>
-          </content>
-        </Page>
-      </pages>
-    </App>
-  </Shell>
+	<Shell>
+		<App>
+			<pages>
+				<!--sap.ui.core.Control-->
+				<Page title="{i18n>homePageTitle}">
+					<content>
+						<!--sap.ui.core.Control-->
+						<Panel
+							headerText="{i18n>HelloPanelTitle}"
+							class="sapUiResponsiveMargin"
+							width="auto"
+						>
+							<content>
+								<!--sap.ui.core.Control-->
+								<Button
+									text="{i18n>showHelloButtonText}"
+									press=".onShowHello"
+                  class="sapUiSmallMarginEnd"
+								/>
+								<Input
+									value="{/recipient/name}"
+									description="Hello {/recipient/name}"
+									valueLiveUpdate="true"
+									width="60%"
+								/>
+								<Text
+									text="Hello {/recipient/name}"
+									class="sapUiSmallMargin"
+								/>
+							</content>
+						</Panel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
 </mvc:View>
