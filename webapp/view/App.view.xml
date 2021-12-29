@@ -5,32 +5,9 @@
 	displayBlock="true"
 >
 	<Shell>
-		<App class="myAppDemoWT">
-			<pages>
-				<!--sap.ui.core.Control-->
-				<Page title="{i18n>homePageTitle}">
-          <headerContent>
-            <Button
-                icon="sap-icon://hello-world"
-                press=".onOpenDialog"
-            >
-            </Button>
-          </headerContent>
-					<content>
-						<!--sap.ui.core.Control-->
-						<Panel
-							headerText="{i18n>HelloPanelTitle}"
-							class="sapUiResponsiveMargin"
-							width="auto"
-						>
-							<content>
-								<mvc:XMLView viewName="sap.ui.demo.ui5.view.HelloPanel"/>
-                <mvc:XMLView viewName="sap.ui.demo.ui5.view.InvoiceList"/>
-							</content>
-						</Panel>
-					</content>
-				</Page>
-			</pages>
-		</App>
+		<App
+			class="myAppDemoWT"
+			id="app"
+		/>
 	</Shell>
 </mvc:View>
